@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="id1" class="hello">Hello world</h1>
+    <h1 class="hello">Welcome to our website</h1>
+    <button onclick="changeColor()">Change</button>
+</body>
+<script>
+    const text= document.querySelector("#id1")
+     changeColor=()=>{
+        text.style.cssText=`
+        color:red;
+        font-size:40px;
+        `
+    }
+</script>
+</html>
